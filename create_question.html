@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+    <head>
+        <title>Low Stakes Builder</title>
+        <link href="styles.css" rel="stylesheet"/>
+    </head>
+
+    <body>
+        <div class = "headingBar">
+            <h1>Low Stakes Builder</h1>
+        </div>
+        <div class = "buttonsPanel">
+            <a href="./index.html"><button type="button">Home Page</button></a>
+            <a href="./create_question.html"><button type="button">Create Question</button></a>
+            <a href="./create_quiz.html"><button type="button">Create Quiz</button></a>
+            <a href="./settings.html"><button type="button">Settings Page</button></a>
+        </div>
+        <div class = "homepage">
+            <hr>
+            
+            <div class = "upload_question", id="question-background">
+                <img id = "questionImg" src="" alt="No image availiable.">
+                <div class="upload_Qbutton">
+                    <input type="file" id="real-file" hidden="hidden" accept="image/png, image/jpeg"/>
+                    <button type="button" id="custom-button">Choose Question File</button>
+                </div>
+
+                
+            </div>
+
+            <div class = "upload_answer", id="answer-background">
+                <img id = "answerImg" src="" alt="No image availiable.">
+                <div class="upload_Abutton">
+                    <input type="file" id="real-fileA" hidden="hidden" accept="image/png, image/jpeg"/>
+                    <button type="button" id="custom-buttonA">Choose Answer File</button>
+                </div>
+            </div>
+            
+
+            
+            <hr>
+            <div class = "dropdown-list", id="TopicDropdown">
+                <div class = "upload_topic">
+                    <div class="select-menu">
+                        <div class="select-button">
+                            <span class="select-button-text">Select Topic</span>
+                            <b class="bx bx-chevron-down">V</b>
+                        </div>
+                    
+                        <ul id="TopicList", class="options">
+                            <li class="option">
+                                <span class="option-text">New Topic</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="custom-topic", class="notDisplayed">
+                        <label for="custom-topic-input">New Topic Name:</label><br>
+                        <input type="text" id="custom-topic-input" name="custom-topic-input"><br>
+                    </div>
+                </div>
+            </div>
+            <div class = "dropdown-list", id="SubtopicDropdown">
+                <div class = "upload_subtopic">
+                    <div class="subtopic-select-menu">
+                        <div class="subtopic-select-button">
+                            <span class="subtopic-select-button-text">Select Subtopic</span>
+                            <b class="bx bx-chevron-down">V</b>
+                        </div>
+                    
+                        <ul id="SubtopicList", class="options">
+                            <li class="subtopic-option">
+                                <span class="subtopic-option-text">New Subtopic</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="custom-subtopic", class="notDisplayed">
+                        <label for="custom-subtopic-input">New Subopic Name:</label><br>
+                        <input type="text" id="custom-subtopic-input" name="custom-subtopic-input"><br>
+                    </div>
+                </div>
+            </div>
+
+            <script type="text/javascript" src="populateTopics.js" defer></script>
+            <script type="text/javascript" src="code.js" defer></script>
+
+            <hr>
+
+            <div class="submit_button">
+                <button type="button" id="Submit-Button">Submit</button>
+            </div>
+
+            <hr>
+
+        </div>
+        
+    </body>
+</html>
