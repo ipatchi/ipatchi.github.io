@@ -120,9 +120,9 @@ body{
     background-color: #680938;
 }
 
-#questionImg{
+#questionImg, #answerImg{
     max-width: 50%;
-    max-width: 50%;
+    max-height: 50%;
     width: fit-content;
     height:fit-content;
     
